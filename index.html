@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello React</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script src="https://fb.me/react-0.14.3.js"></script>
+    <script src="https://fb.me/react-dom-0.14.3.js"></script>
+
+    <script>
+        const isElm = React.createElement('i', {id: 'heading'}, 'React!')
+        const elm = React.createElement("h1", null, isElm)
+        ReactDOM.render(elm, document.querySelector('#app'))
+    </script>
+</body>
+</html>
